@@ -1,10 +1,9 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 import { Weather } from "./pages/weather/weather";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Weather],
+  imports: [Weather],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

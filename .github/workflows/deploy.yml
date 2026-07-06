@@ -24,7 +24,7 @@ jobs:
 
       - name: Install Dependencies
         run: npm ci
-            - name: Generate Production Environment
+      - name: Generate Production Environment
         run: |
           cat > src/environments/environment.production.ts <<EOF
           export const environment = {

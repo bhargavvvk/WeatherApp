@@ -1,59 +1,119 @@
 # WeatherApp
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.13.
+A simple Angular 21 application that retrieves and displays weather forecast data from a REST API. The application automatically deploys to GitHub Pages using GitHub Actions whenever changes are pushed to the `main` branch.
 
-## Development server
+## Features
 
-To start a local development server, run:
+- Displays weather forecast data in a responsive table
+- Calls a REST API using Angular HttpClient
+- Shows loading and error states
+- Refresh button to reload weather data
+- Displays total forecast records
+- Highlights temperatures above 30°C
+- Automatic deployment using GitHub Actions
+- Hosted on GitHub Pages
+
+---
+
+## Tech Stack
+
+- Angular 21
+- TypeScript
+- CSS
+- RxJS
+- GitHub Actions
+- GitHub Pages
+
+---
+
+## Angular Version
+
+```bash
+Angular CLI: 21.x
+Angular: 21.x
+```
+
+---
+
+## Installation Steps
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/bhargavvvk/WeatherApp.git
+```
+
+### 2. Navigate to the project
+
+```bash
+cd WeatherApp
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Run the application
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Open your browser and navigate to:
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+```
+http://localhost:4200
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
 
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
+## Build
 
 ```bash
 ng build
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+---
 
-## Running unit tests
+## Deployment
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+This project uses **GitHub Actions** for Continuous Integration and Continuous Deployment (CI/CD).
 
-```bash
-ng test
+Every push to the `main` branch automatically:
+
+- Checks out the source code
+- Sets up Node.js
+- Installs dependencies
+- Builds the Angular application
+- Deploys the application to GitHub Pages
+
+---
+
+## Deployment URL
+
+https://bhargavvvk.github.io/WeatherApp/
+
+---
+
+## Project Structure
+
+```
+src
+│
+├── app
+│   ├── models
+│   ├── pages
+│   ├── services
+│   └── environments
+│
+├── assets
+└── styles.css
 ```
 
-## Running end-to-end tests
+---
 
-For end-to-end (e2e) testing, run:
+## Author
 
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Bhargav Kokkula
